@@ -1,6 +1,9 @@
 # This file is responsible for configuring your application
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
+config :issues, github_url: "https://api.github.com"
+# import_config "#{Mix.env}.exs" => a way to set configuration through files
+# elixir will know to read from dev.exs, test.exs, or prod.exs depending on the environemnt that is running
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
@@ -19,6 +22,7 @@ use Mix.Config
 # You can also configure a 3rd-party app:
 #
 #     config :logger, level: :info
+#
 #
 
 # It is also possible to import configuration files, relative to this
